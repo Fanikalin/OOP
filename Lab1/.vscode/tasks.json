@@ -1,0 +1,49 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build Task1",
+            "type": "shell",
+            "command": "g++ -std=c++17 -g -Wall *.cpp -o main",
+            "options": {
+                "cwd": "${workspaceFolder}/Task1"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "build Task2",
+            "type": "shell",
+            "command": "g++ -std=c++17 -g -Wall *.cpp -o main",
+            "options": {
+                "cwd": "${workspaceFolder}/Task2"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "run Task1",
+            "type": "shell",
+            "command": "./main",
+            "options": {
+                "cwd": "${workspaceFolder}/Task1"
+            },
+            "dependsOn": "build Task1",
+            "problemMatcher": []
+        },
+        {
+            "label": "run Task2",
+            "type": "shell",
+            "command": "./main",
+            "options": {
+                "cwd": "${workspaceFolder}/Task2"
+            },
+            "dependsOn": "build Task2",
+            "problemMatcher": []
+        }
+    ]
+}

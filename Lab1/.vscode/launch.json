@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Task1",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/Task1/main",
+            "cwd": "${workspaceFolder}/Task1",
+            "MIMode": "gdb",
+            "preLaunchTask": "build Task1"
+        },
+        {
+            "name": "Debug Task2",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/Task2/main",
+            "cwd": "${workspaceFolder}/Task2",
+            "MIMode": "gdb",
+            "preLaunchTask": "build Task2"
+        }
+    ]
+}
